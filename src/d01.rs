@@ -1,9 +1,8 @@
-use std::{fs, time::Instant};
+use std::fs;
 
 pub fn solve() {
     let file_path = "input/day01.txt";
     let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
-    let time = Instant::now();
     let contents = contents.split("\n");
 
     let mut res1 = 0;
@@ -15,19 +14,16 @@ pub fn solve() {
         let s = String::from(s[0]) + &String::from(s[s.len() - 1]);
         res1 += s.parse::<i32>().unwrap();
     }
-    let time1 = time.elapsed().as_micros();
 
     let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
-    let time = Instant::now();
     let contents = contents.split("\n");
 
     let mut res2 = 0;
     for s in contents {
         res2 += get_numbers(s);
     }
-    let time2 = time.elapsed().as_micros();
 
-    println!("Day 01:\nTask 1:{res1:6} {time1}μs\nTask 2:{res2:6} {time2}μs");
+    println!("Day 01:\nTask 1:{res1:6}\nTask 2:{res2:6}");
 }
 
 fn get_numbers(string: &str) -> i32 {
