@@ -21,7 +21,6 @@ pub fn solve() {
         }
     }
 
-    let file_path = "input/day02.txt";
     let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
     let contents = contents.split("\n");
 
