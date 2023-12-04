@@ -27,7 +27,7 @@ pub fn solve() {
     let mut res2 = 0;
 
     for game in contents {
-        let (gid, game) = get_game_id(game);
+        let (_, game) = get_game_id(game);
         let (r, g, b) = game_min_set(game);
         res2 += r * g * b;
     }

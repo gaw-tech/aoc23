@@ -3,7 +3,7 @@ use std::fs;
 pub fn solve() {
     let file_path = "input/day03.txt";
     let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
-    let mut contents: Vec<&str> = contents.split("\n").collect();
+    let contents: Vec<&str> = contents.split("\n").collect();
 
     let mut res1 = 0;
     let mut row_index: usize = 0;
@@ -45,7 +45,7 @@ pub fn solve() {
     }
 
     let contents = fs::read_to_string(file_path).expect("Should have been able to read the file");
-    let mut contents: Vec<&str> = contents.split("\n").collect();
+    let contents: Vec<&str> = contents.split("\n").collect();
 
     let mut res2 = 0;
     let mut row_index: usize = 0;
