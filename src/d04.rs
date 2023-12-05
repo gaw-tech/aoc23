@@ -47,5 +47,5 @@ pub fn solve() {
     }
     let res2 = card_amounts.iter().fold(0, |a, e| a + e);
 
-    println!("Day 03:\nTask 1:{res1:8}\nTask 2:{res2:8}");
+    println!("Day 04:\nTask 1:{res1:8}\nTask 2:{res2:8}");
 }
