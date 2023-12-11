@@ -46,7 +46,6 @@ pub fn solve() {
     for l in used {
         let mut l = l.iter().filter(|e| **e != '-').peekable();
         while let Some(c) = l.next() {
-            println!("{c} {inside}");
             if inside && *c == ' ' {
                 res2 += 1;
             }
