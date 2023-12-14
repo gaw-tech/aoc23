@@ -126,7 +126,6 @@ pub fn solve() {
                 ('h', j)
             }
         })
-        .inspect(|e| println!("{e:?}"))
         .fold(0, |a, (d, v)| if d == 'h' { a + 100 * v } else { a + v });
 
     let res2 = contents;
