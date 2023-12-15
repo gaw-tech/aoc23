@@ -124,14 +124,3 @@ fn cycle(map: &mut Vec<Vec<char>>) -> i64 {
     }
     id as i64
 }
-
-// only works for square matrices
-fn transform<T: Copy>(vec: &mut Vec<Vec<T>>) {
-    for i in 0..vec.len() {
-        for j in i..vec.len() {
-            let tmp = vec[i][j];
-            vec[i][j] = vec[j][i];
-            vec[j][i] = tmp;
-        }
-    }
-}
