@@ -1,7 +1,4 @@
-use std::{
-    collections::HashMap,
-    fs, time::Instant,
-};
+use std::{collections::HashMap, fs};
 
 pub fn solve() {
     let file_path = "input/day22.txt";
